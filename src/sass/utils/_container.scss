@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid cyan;
+
+  @include mobile {
+    max-width: 480px;
+  }
+
+  @include tablett {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+  }
+}
