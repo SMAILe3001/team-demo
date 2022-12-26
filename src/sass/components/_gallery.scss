@@ -1,22 +1,52 @@
 .section__gallery {
-  background-image: url(../images/backraund/background-mobile.jpg);
+  background-image: linear-gradient(
+      #84a178 32px,
+      rgba(0, 0, 0, 0) 32px,
+      rgba(0, 0, 0, 0)
+    ),
+    url(../images/backraund/background-mobile.jpg);
   background-size: cover;
 
   @media retina {
-    background-image: url(../images/backraund/background-mobile@2x.jpg);
+    background-image: linear-gradient(
+        #84a178 32px,
+        rgba(0, 0, 0, 0) 32px,
+        rgba(0, 0, 0, 0)
+      ),
+      url(../images/backraund/background-mobile@2x.jpg);
   }
 
   @include tablett {
-    background-image: url(../images/backraund/background-tablet.jpg);
+    background-image: linear-gradient(
+        #84a178 144px,
+        rgba(0, 0, 0, 0) 144px,
+        rgba(0, 0, 0, 0)
+      ),
+      url(../images/backraund/background-tablet.jpg);
     @media retina {
-      background-image: url(../images/backraund/background-tablet@2x.jpg);
+      background-image: linear-gradient(
+          #84a178 144px,
+          rgba(0, 0, 0, 0) 144px,
+          rgba(0, 0, 0, 0)
+        ),
+        url(../images/backraund/background-tablet@2x.jpg);
     }
   }
 
   @include desktop {
-    background-image: url(../images/backraund/background-desctop.jpg);
+    background-image: linear-gradient(
+        #84a178 98px,
+        rgba(0, 0, 0, 0) 98px,
+        rgba(0, 0, 0, 0)
+      ),
+      url(../images/backraund/background-desctop.jpg);
     @media retina {
-      background-image: url(../images/backraund/background-desctop@2x.jpg);
+      background-image: linear-gradient(
+          #84a178 98px,
+          rgba(0, 0, 0, 0) 98px,
+          rgba(0, 0, 0, 0)
+        ),
+        url(../images/backraund/background-desctop@2x.jpg);
     }
   }
 }

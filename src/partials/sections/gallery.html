@@ -3,37 +3,92 @@
     <h2 class="gallery__title">Gallery</h2>
     <div class="gallery__slider">
       <div class="gallery__slider-item">
-        <img
-          class="gallery__images"
-          srcset="
-            ./images/gallery/slide-1.jpg    1x,
-            ./images/gallery/slide-1@2x.jpg 2x
-          "
-          src="./images/gallery/slide-1.jpg"
-          alt="gallery-1"
-        />
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/slide-d-1.jpg    1x,
+              ./images/gallery/slide-d-1@2x.jpg 2x
+            "
+          />
+
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/slide-t-1.jpg    1x,
+              ./images/gallery/slide-t-1@2x.jpg 2x
+            "
+          />
+          <source
+            srcset="
+              ./images/gallery/slide-m-1.jpg    1x,
+              ./images/gallery/slide-m-1@2x.jpg 2x
+            "
+          />
+          <img
+            class="gallery__images"
+            src="./images/gallery/slide-d-1.jpg"
+            alt="gallery-1"
+          />
+        </picture>
       </div>
       <div class="gallery__slider-item">
-        <img
-          class="gallery__images"
-          srcset="
-            ./images/gallery/slide-2.jpg    1x,
-            ./images/gallery/slide-2@2x.jpg 2x
-          "
-          src="./images/gallery/slide-2.jpg"
-          alt="gallery-2"
-        />
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/slide-d-2.jpg    1x,
+              ./images/gallery/slide-d-2@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/slide-t-2.jpg    1x,
+              ./images/gallery/slide-t-2@2x.jpg 2x
+            "
+          />
+          <source
+            srcset="
+              ./images/gallery/slide-m-2.jpg    1x,
+              ./images/gallery/slide-m-2@2x.jpg 2x
+            "
+          />
+          <img
+            class="gallery__images"
+            src="./images/gallery/slide-d-2.jpg"
+            alt="gallery-2"
+          />
+        </picture>
       </div>
       <div class="gallery__slider-item">
-        <img
-          class="gallery__images"
-          srcset="
-            ./images/gallery/slide-3.jpg    1x,
-            ./images/gallery/slide-3@2x.jpg 2x
-          "
-          src="./images/gallery/slide-3.jpg"
-          alt="gallery-3"
-        />
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/slide-d-3.jpg    1x,
+              ./images/gallery/slide-d-3@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/slide-t-3.jpg    1x,
+              ./images/gallery/slide-t-3@2x.jpg 2x
+            "
+          />
+          <source
+            srcset="
+              ./images/gallery/slide-m-3.jpg    1x,
+              ./images/gallery/slide-m-3@2x.jpg 2x
+            "
+          />
+          <img
+            class="gallery__images"
+            src="./images/gallery/slide-d-3.jpg"
+            alt="gallery-3"
+          />
+        </picture>
       </div>
     </div>
   </div>
