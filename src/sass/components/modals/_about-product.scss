@@ -1,0 +1,236 @@
+.about-product {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  overflow: auto;
+  flex-wrap: wrap;
+}
+
+.about-product__window {
+  position: relative;
+  width: 100%;
+  min-width: 240px;
+  max-width: 480px;
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  padding: 28px 20px;
+  text-align: center;
+
+  @include tablett {
+    max-width: 568px;
+    padding: 32px 40px;
+  }
+}
+
+.about-product__buttun-close {
+  position: absolute;
+  color: #131313;
+  right: 12px;
+  top: 12px;
+  transform: translate(-50% -50%);
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-product__close-icon {
+  fill: currentColor;
+}
+
+.about-product__title {
+  margin-bottom: 27px;
+  font-family: 'Seymour One';
+  @include font(400, 20px, calc(28 / 20), none);
+
+  @include tablett {
+    margin-bottom: 31px;
+  }
+}
+
+.about-product__images {
+  position: relative;
+  width: 132px;
+  height: 132px;
+  margin: 0 auto 22px auto;
+  border-radius: 50%;
+  background-color: #9cbe8f;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  @include tablett {
+    margin-bottom: 24px;
+  }
+}
+
+.about-product__images::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(../images/about-product/icecream-back.png);
+  background-size: contain;
+
+  @include retina {
+    background-image: url(../images/about-product/icecream-back@2x.png);
+  }
+}
+
+.nutritional-value {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 40px;
+  @include tablett {
+    margin-bottom: 48px;
+  }
+}
+
+.nutritional-value__item {
+  width: 53px;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include tablett {
+    width: 65px;
+    padding-bottom: 15px;
+  }
+}
+
+.nutritional-value__amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  padding: 8px 0;
+  background: #9cbe8f;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
+  @include font(500, 10px, calc(28 / 10), none);
+
+  @include tablett {
+    width: 53px;
+    padding: 12px 0;
+    margin-bottom: 6px;
+    @include font(none, 12px, calc(28 / 12), none);
+  }
+}
+
+.nutritional-value__type {
+  @include font(400, 10px, calc(12 / 10), none);
+  @include tablett {
+    @include font(none, 12px, calc(15 / 12), none);
+  }
+}
+
+.ingredients {
+  @include font(500, 20px, calc(28 / 20), none);
+  margin-bottom: 24px;
+}
+
+.ingredients__list {
+  margin-bottom: 40px;
+  @include tablett {
+    margin-bottom: 48px;
+  }
+}
+
+.ingredients__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 11px;
+}
+
+.ingredients__item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.ingredients__name {
+  @include font(400, 14px, calc(25 / 14), 0.04em);
+}
+
+.about-form {
+  margin-bottom: 24px;
+  max-width: 368px;
+  margin-left: auto;
+  margin-right: auto;
+  @include tablett {
+    margin-bottom: 32px;
+  }
+}
+
+.about-form__label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.about-form__input,
+.about-form__textarea {
+  width: 100%;
+
+  padding: 11px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  padding-left: 10px;
+
+  @include font(400, 14px, calc(20 / 14), 0.04em);
+  color: #131313;
+
+  @include tablett {
+    padding-left: 16px;
+  }
+}
+
+.about-form__input::placeholder,
+.about-form__textarea::placeholder {
+  @include font(400, 14px, calc(20 / 14), 0.04em);
+  color: #131313;
+}
+
+.about-form__textarea {
+  display: block;
+  height: 84px;
+  resize: none;
+}
+
+.about-button {
+  background: #f8d24e;
+  border-radius: 10px;
+  padding: 12px 34px;
+
+  @include font(600, 14px, calc(17 / 14), none);
+
+  color: #131313;
+  border: 0;
+}
+
+.about-button:hover,
+.about-button:focus {
+  background: #0a8817;
+}
+
+.about-button:focus {
+  color: #ffffff;
+}

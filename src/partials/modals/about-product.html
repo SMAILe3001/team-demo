@@ -1,0 +1,87 @@
+<button
+  class="about-product__buttun-close"
+  type="button"
+  data-modal-about-product-open
+>
+  <svg class="about-product__close-icon" width="14" height="14">
+    <use href="./images/read-more/read-mode-close.svg#icon-modal-close"></use>
+  </svg>
+</button>
+<div class="about-product" data-modal-about-product>
+  <div class="about-product__window">
+    <button
+      class="about-product__buttun-close"
+      type="button"
+      data-modal-about-product-close
+    >
+      <svg class="about-product__close-icon" width="14" height="14">
+        <use
+          href="./images/read-more/read-mode-close.svg#icon-modal-close"
+        ></use>
+      </svg>
+    </button>
+    <h2 class="about-product__title">Chololate icecream</h2>
+    <div class="about-product__images"></div>
+    <ul class="nutritional-value">
+      <li class="nutritional-value__item">
+        <p class="nutritional-value__amount">320</p>
+        <p class="nutritional-value__type">kcal</p>
+      </li>
+      <li class="nutritional-value__item">
+        <p class="nutritional-value__amount">4g</p>
+        <p class="nutritional-value__type">Protein...</p>
+      </li>
+      <li class="nutritional-value__item">
+        <p class="nutritional-value__amount">8,2g</p>
+        <p class="nutritional-value__type">Fats</p>
+      </li>
+      <li class="nutritional-value__item">
+        <p class="nutritional-value__amount">40,4g</p>
+        <p class="nutritional-value__type">Carbs</p>
+      </li>
+    </ul>
+    <h3 class="ingredients">Ingredients</h3>
+    <ul class="ingredients__list">
+      <li class="ingredients__item">
+        <p class="ingredients__name">Milk</p>
+        <p class="iIngredients__amount">100ml</p>
+      </li>
+      <li class="ingredients__item">
+        <p class="ingredients__name">Belgian chocolate</p>
+        <p class="ingredients__amount">20g</p>
+      </li>
+      <li class="ingredients__item">
+        <p class="ingredients__name">Cream</p>
+        <p class="ingredients__amount">150 ml</p>
+      </li>
+      <li class="ingredients__item">
+        <p class="ingredients__name">Cocoa powder</p>
+        <p class="ingredients__amount">30g</p>
+      </li>
+      <li class="ingredients__item">
+        <p class="ingredients__name">Sugar</p>
+        <p class="ingredients__amount">40g</p>
+      </li>
+      <li class="ingredients__item">
+        <p class="ingredients__name">Vanilla sugar</p>
+        <p class="ingredients__amount">10g</p>
+      </li>
+    </ul>
+    <form class="about-form" autocomplete="on">
+      <label class="about-form__label"
+        ><input class="about-form__input" type="text" placeholder="Name"
+      /></label>
+      <label class="about-form__label"
+        ><input class="about-form__input" type="tel" placeholder="Phone"
+      /></label>
+      <label class="about-form__coment">
+        <textarea
+          class="about-form__textarea"
+          name="about-coment"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+    </form>
+    <button class="about-button" type="submit">Submit</button>
+  </div>
+</div>
