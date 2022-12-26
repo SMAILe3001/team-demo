@@ -2,14 +2,29 @@
   padding-top: 80px;
   padding-bottom: 40px;
 
+  background-image: url(../images/backraund/background-mobile.jpg);
+  background-size: cover;
+
+  @media retina {
+    background-image: url(../images/backraund/background-mobile@2x.jpg);
+  }
+
   @include tablett {
     padding-top: 100px;
     padding-bottom: 80px;
+    background-image: url(../images/backraund/background-tablet.jpg);
+    @media retina {
+      background-image: url(../images/backraund/background-tablet@2x.jpg);
+    }
   }
 
   @include desktop {
     padding-top: 140px;
     padding-bottom: 100px;
+    background-image: url(../images/backraund/background-desctop.jpg);
+    @media retina {
+      background-image: url(../images/backraund/background-desctop@2x.jpg);
+    }
   }
 }
 

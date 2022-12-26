@@ -1,0 +1,43 @@
+.section__gallery {
+  background-image: url(../images/backraund/background-mobile.jpg);
+  background-size: cover;
+
+  @media retina {
+    background-image: url(../images/backraund/background-mobile@2x.jpg);
+  }
+
+  @include tablett {
+    background-image: url(../images/backraund/background-tablet.jpg);
+    @media retina {
+      background-image: url(../images/backraund/background-tablet@2x.jpg);
+    }
+  }
+
+  @include desktop {
+    background-image: url(../images/backraund/background-desctop.jpg);
+    @media retina {
+      background-image: url(../images/backraund/background-desctop@2x.jpg);
+    }
+  }
+}
+
+.gallery__title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.gallery__images {
+  width: 100%;
+  border-radius: 8px;
+
+  @include tablett {
+    border-radius: 18px;
+  }
+
+  @include desktop {
+    border-radius: 24px;
+  }
+}
