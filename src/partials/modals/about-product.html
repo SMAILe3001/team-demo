@@ -1,20 +1,19 @@
 <button
-  class="about-product__buttun-close"
+  class="about-product__buttun-close js-open-modal"
   type="button"
-  data-modal-about-product-open
+  data-modal="1"
 >
   <svg class="about-product__close-icon" width="14" height="14">
     <use href="./images/read-more/read-mode-close.svg#icon-modal-close"></use>
   </svg>
 </button>
-<div class="about-product is-hidden" data-modal-about-product>
+<div class="about-product is-hidden modal"  data-modal="1">
   <div class="about-product__window">
     <button
-      class="about-product__buttun-close"
+      class="about-product__buttun-close js-modal-close"
       type="button"
-      data-modal-about-product-close
     >
-      <svg class="about-product__close-icon" width="14" height="14">
+      <svg class="about-product__close-icon js-overlay-modal" width="14" height="14">
         <use
           href="./images/read-more/read-mode-close.svg#icon-modal-close"
         ></use>
@@ -81,7 +80,7 @@
           placeholder="Comment"
         ></textarea>
       </label>
+      <button class="about-button" type="submit">Submit</button>
     </form>
-    <button class="about-button" type="submit">Submit</button>
   </div>
 </div>

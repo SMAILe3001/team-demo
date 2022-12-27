@@ -14,6 +14,7 @@
 }
 
 .about-product__window {
+  
   position: relative;
   width: 100%;
   min-width: 240px;
@@ -25,6 +26,8 @@
   text-align: center;
 
   @include tablett {
+    margin-top: 5px;
+  margin-bottom: 5px;
     max-width: 568px;
     padding: 32px 40px;
   }
@@ -171,13 +174,10 @@
 }
 
 .about-form {
-  margin-bottom: 24px;
   max-width: 368px;
   margin-left: auto;
   margin-right: auto;
-  @include tablett {
-    margin-bottom: 32px;
-  }
+  
 }
 
 .about-form__label {
@@ -210,9 +210,13 @@
 }
 
 .about-form__textarea {
+  margin-bottom: 24px;
   display: block;
   height: 84px;
   resize: none;
+  @include tablett {
+    margin-bottom: 32px;
+  }
 }
 
 .about-button {
